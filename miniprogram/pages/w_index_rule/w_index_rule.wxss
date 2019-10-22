@@ -1,0 +1,5 @@
+/* pages/w_index_rule/w_index_rule.wxss */
+.rule {
+    display: block;
+    width: 100%;
+}

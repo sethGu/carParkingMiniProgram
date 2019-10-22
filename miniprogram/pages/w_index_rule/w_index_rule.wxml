@@ -1,0 +1,4 @@
+<!--pages/w_index_rule/w_index_rule.wxml-->
+<view>
+    <image class="rule" mode="widthFix" src="/images/rule.png"></image>
+</view>

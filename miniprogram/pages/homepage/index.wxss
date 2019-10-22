@@ -1,0 +1,423 @@
+/* pages/homepage/index.wxss */
+
+page{
+  /* background: #f3f3f3; */
+  height:100%;
+}
+
+/*swiper*/
+swiper{
+  width: 690rpx;
+  height: 262rpx;
+  margin: 0 auto;
+  padding-top: 24rpx;
+
+}
+swiper image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 18rpx; 
+}
+/*信息展示*/
+.zhuti{
+    height: calc(100% - 286rpx);
+    width: 100%;
+    position: relative;
+    background: #ececec;
+}
+.park-info{
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  height: 134rpx;
+  /* padding: 25rpx  0rpx; */
+  /* margin-bottom: 20rpx; */
+  box-sizing: border-box;
+  padding: 25rpx 0 0;
+}
+.info{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  border:1px solid #ccc;
+  border-width:0 1px 0 0;
+  
+}
+.info:last-child{
+  border-width:0;
+}
+.info text{
+  display: block;
+  text-align: center;
+
+}
+.park-show{
+  color: #333;
+  font-size:28rpx;
+}
+.park-sao{
+  width: 36rpx;
+  height: 36rpx;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.park-click{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+
+}
+.park-desc{
+  color: #777;
+  margin-top: 15rpx;
+  font-size:24rpx;
+}
+.click-text1{
+  display: block;
+  color:#333;
+  font-size: 34rpx;
+  margin-bottom: 10rpx;
+}
+.click-bind{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+}
+.click-text2{
+  color:#777;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  font-size: 24rpx;
+}
+.bind-img{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  width: 32rpx;
+  height: 32rpx;
+  box-sizing: border-box;
+  margin-left: 16rpx;
+}
+
+
+/* .info::after{
+  position: absolute;
+  right: 20rpx;
+  top: 35rpx;
+  content: "";
+  width: 5rpx;
+  height: 40rpx;
+  background: #ccc;
+} */
+.label-shouquan{
+  width: 100%;
+  height:100%;
+  display: inline-block;
+}
+/* .geduan{
+  width: 100%;
+  height: 20rpx;
+  background: #f3f3f3;
+} */
+/*搜索查询和支付*/
+.park-query{
+  overflow: hidden;
+  width: 100%; 
+  background-color: #ececec;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30rpx  0;  
+}
+.park-search{
+  overflow: hidden;
+  width: 100%;
+  /* padding-bottom:20rpx; */
+}
+.search-title{
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.search-desc{
+  font-size:32rpx;
+}
+.search-input{
+  overflow: hidden;
+  width: 686rpx;
+  margin: 0 auto;
+  height: 98rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #ffb900;
+  background: white;
+  position: relative;
+}
+/* .section-img{
+  display: inline-block;
+  width: 10%;
+  height: 80rpx;
+  float: left;
+}
+.btn-detail{
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  margin-top: 10rpx;
+} */
+.section-input{
+  display: inline-block;
+  width: 511rpx;
+  height: 98rpx;
+  box-sizing: border-box;
+  padding-left:30rpx;
+}
+.section-input input{
+  /* border: 1rpx solid #000; */
+  background: white;
+  padding: 0 0 0 36rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  width: 100%;
+  height: 98rpx;
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+}
+.section-input input:focus {
+    border: 1px solid #3b99fc;
+    outline: 0;
+    box-shadow: 0 0 3px 0px #3b99fc;
+    -webkit-box-shadow: 0 0 3px 0px #3b99fc; 
+}
+
+#simpleKeyboard{
+  width: 100%;
+  height: 100%;
+  background: white;
+  font-size: 32rpx;
+}
+
+
+
+.section-button{
+  display: inline-block;
+  width: 175rpx;
+  height: 98rpx;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.section-button button::after{
+  border: 0rpx;
+}
+.section-button text{
+  width: 100%;
+  height: 100%;
+  color: #282828;
+  font-size: 36rpx;
+  background: #ffb900;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing:18rpx;
+  text-indent: 18rpx;
+}
+
+/*快捷缴费  */
+.pay-quick{
+  overflow: hidden;
+  width: 100%;
+  margin-top: 52rpx;
+  text-align: center;
+}
+.vehicle_info{
+  width: 395rpx;
+  margin: 0 auto 40rpx;
+  height:108rpx;
+  position: relative;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  padding: 8rpx 10rpx;
+  background: linear-gradient(#739dfb ,#346ef3); /*渐变*/
+}
+.bg-car{
+  width: 100%;
+  height: 100%;
+}
+.vehicle_info text:last-child{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right:0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 48rpx;
+  letter-spacing:5rpx;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  background: linear-gradient(#7099fb,#3871f4); /*渐变*/
+  border-radius: 15rpx;
+}
+
+
+/* 收费细则和提醒 */
+.pay-info{
+  position: absolute;
+  bottom: 62rpx;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  justify-content: center;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pay-img{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  width: 30rpx;
+  height: 30rpx;
+  box-sizing: border-box;
+  margin-left: 8rpx;
+}
+.pay-desc{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  color: #999;
+  font-size: 24rpx;
+}
+/*提示  */
+.search-prompt{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+}
+.prompt-img{
+  width: 34rpx;
+  height:34rpx;
+}
+.prompt-desc{
+  color:#999;
+  font-size: 24rpx;
+}
+/*遮罩层搜索结果*/
+  /*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+  /*对话框 */
+.commodity_attr_box {
+  height: 500rpx; 
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  /* padding-top: 20rpx; */
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  overflow-y:scroll;
+}
+.commodity_attr_box::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 1px solid rgba(0, 0, 0, 0);
+}
+.commodity_attr_box::-webkit-scrollbar {
+  width: 5px;
+  height: 13px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.commodity_attr_box::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 28px;
+}
+.commodity_attr_box::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+  /*搜索结果  */
+.search_result{
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b2b2b2;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 36rpx;
+  text-align: center;
+  letter-spacing:5rpx;
+  color: #282828;
+}
+
+/* 模拟车牌 */
+.moni2{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 15rpx;
+  box-sizing: border-box;
+  border: 2rpx solid white;
+  background: linear-gradient(#7099fb,#3871f4); /*渐变*/
+}
+.moni3{
+  background: white;
+  width: 27rpx;
+  height: 8.5rpx;
+  position: absolute;
+  top: -3rpx;
+  left: 75rpx;
+  border-radius: 5rpx;
+  z-index: 10;
+}
+.moni4{
+  background: white;
+  width: 27rpx;
+  height: 8.5rpx;
+  position: absolute;
+  top: -3rpx;
+  right: 75rpx;
+  border-radius: 5rpx;
+  z-index: 10;
+}

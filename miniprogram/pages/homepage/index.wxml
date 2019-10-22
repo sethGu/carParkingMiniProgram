@@ -1,0 +1,86 @@
+<!--pages/homepage/index.wxml-->
+
+<!--轮播图  -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!--信息展示-->
+<view class='zhuti'>
+  <block wx:if="{{member}}">
+    <view class="park-info">
+      <view class="info"  bindtap='scan'>
+        <image  class="park-sao" src="/images/sao.png"> </image>
+        <text class="park-desc">券码扫描</text>
+      </view>
+      <view class="info"  bindtap='cloudCenter'>
+        <image  class="park-sao" src="/images/sao.png"> </image>
+        <text class="park-desc">云控制中心</text>
+      </view>
+      <!-- <view class="info" >
+        <text  class="park-show">{{member_tel}}</text>
+        <text class="park-desc">{{member_dengji}}</text>
+      </view> -->
+    </view>
+  </block>
+  <block wx:else>
+    <view class="park-info" bindtap='tapBindmember'>
+      <view class="park-click">
+        <text class="click-text1">停车缴费系统</text>
+        <view class='click-bind'>
+          <text class="click-text2" >绑定会员</text>
+          <image class='bind-img' src='/images/tap_right.png' bindtap='tapRule'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+  <!-- <view class="geduan"></view> -->
+<!--查询和支付-->
+  <view class="park-query">
+  <!--查询-->
+    <view class='park-search'>
+      <view class="search-input">
+        <view class="section-input">
+          <simpleKeyboard bind:keyboardStatus="keyboardStatusHandler" id="simpleKeyboard" placeholderText="请输入4位连续车牌号" ></simpleKeyboard>
+        </view>
+        <view class="section-button">
+          <text bindtap='toSearch'>查询</text>
+        </view>
+      </view>
+    </view>
+   <!--历史记录&&快捷缴费  -->
+    <block wx:if="{{history}}">
+      <view class="pay-quick">
+        <view class="vehicle_info" wx:for="{{history}}" bindtap='search_pay' data-text="{{item}}" >
+          <!-- 车牌模拟 -->
+            <view class="moni2">
+              <text class="moni3"></text>
+              <text class="moni4"></text>
+              <text>{{item}}</text> 
+            </view>
+        </view>
+      </view>
+    </block>
+  
+  </view>
+<!--收费明细  -->
+  <view class="pay-info">
+    <view class="search-prompt">
+      <text class="pay-desc" bindtap='tapRule'>缴费规则</text>
+      <image class='pay-img' src='/images/doubt.png' bindtap='tapRule'></image>
+    </view>
+  </view>
+</view>
+
+<!-- 遮罩层搜索结果 -->
+<!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}" >
+      <view wx:for="{{search_result}}" class='search_result' data-text="{{item.carnumber}}" bindtap='search_pay'>{{item.carnumber}}</view>
+  </view>
+ 

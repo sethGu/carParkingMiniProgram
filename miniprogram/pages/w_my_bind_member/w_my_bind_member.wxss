@@ -1,0 +1,128 @@
+/* pages/w_my_bind_member/w_my_bind_member.wxss */
+
+/*顶部logo  */
+.logo{
+  width: 100%;
+  height:310rpx;
+  box-sizing: border-box;
+  padding-top: 76rpx;
+}
+.logo image{
+  display: block;
+  width: 420rpx;
+  height: 160rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*绑定提示  */
+.bind-tishi{
+  width: 100%;
+  position: absolute;
+  bottom: 55rpx;
+  box-sizing: border-box;
+}
+.search-prompt{
+  width: 670rpx;
+  margin: 0 auto ;
+  text-align:center;
+}
+.prompt-desc{
+  color:#a0a0a0;
+  font-size: 24rpx;
+  text-align: center;
+  display: block;
+}
+.prompt-desc1{
+  padding-bottom: 20rpx;
+}
+.prompt-desc2{
+  padding-bottom: 10rpx;
+}
+/*绑定会员  */
+.bind-info{
+  width: 670rpx;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.bind-title {  
+    height: 60rpx;  
+    line-height: 60rpx;  
+    text-align: center;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}  
+.bind-title .line {  
+    display: inline-block;  
+    width: 234rpx;  
+    border-top: 1rpx solid #ffb900 ;  
+}  
+.bind-title .bind-title-desc {  
+    color: #282828;  
+    font-size: 32rpx;
+    margin: 0 36rpx; 
+}  
+
+/*表单  */
+from{
+  width: 100%;
+}
+.section{
+  width: 100%;
+  position: relative;
+}
+form input{
+  border-bottom: 1rpx solid #ffb900; 
+  background: white;
+  padding: 20rpx 20rpx;
+  padding-right: 170rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  width: 100%;
+  height: 102rpx;
+}
+form input[name="tel"]{
+  padding: 20rpx 20rpx;
+  /* margin: 50rpx auto 0; */
+}
+.buttonget{  
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:190rpx;
+  height:99rpx;
+  background: white;
+  line-height: 99rpx;
+  font-size: 30rpx;
+  text-align: right;
+}
+.show{
+    color: #ffb900;
+}
+.hide{
+    color: #ccc;
+}
+.btn-area button.btn-false{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 160rpx auto ;
+  font-size: 32rpx;
+  background: #fff;
+  color: #ccc;
+}
+button[class="btn-true"]::after {
+  border: 0;
+} 
+.btn-area button.btn-true{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 160rpx auto ;
+  font-size: 32rpx;
+  background: #ffb900;
+  color: #282828;
+  border-radius: 50rpx;
+}

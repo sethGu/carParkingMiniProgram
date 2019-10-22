@@ -1,0 +1,166 @@
+/* pages/w_my_park_coupon/w_my_park_coupon.wxss */
+
+page{
+  background: #f2f4f6;
+}
+/* 无优惠券显示 */
+.no-coupon{
+  font-size: 34rpx;
+  text-align: center;
+  color: #333;
+  margin-top: 450rpx;
+}
+.no-coupon text{
+  display: block;
+}
+.no-coupon text:last-child{
+  color: #999;
+  font-size: 26rpx;
+  margin-top: 15rpx;
+}
+/* 有优惠券时 */
+.top-info{
+  width: 100%;
+  height: 100rpx;
+  background: white;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+.top-info view{
+  width: 33.3%;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 32rpx;
+  color: #d8d8d8;
+  box-sizing: border-box;
+  /* padding: 0 30rpx; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.top-info view text{
+  width: 180rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 32rpx;
+  color: #d8d8d8;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.top-info view:nth-child(2) text{
+  width: 206rpx;
+}
+.top-info .active{
+  color: #6f6f6f;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #ffb900;
+}
+/* 优惠券样式 */
+.coupon-info{
+  width: 670rpx;
+  height: 202rpx;
+  margin: 20rpx auto;
+  box-sizing: border-box;
+  border-left: 6rpx solid #ffb900;
+  border-radius: 10rpx;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+.coupon-info.no{
+  border-left: 6rpx solid #dadada;
+}
+
+.coupon-info-desc{
+  width: 410rpx;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 26rpx 25rpx;
+  overflow: hidden;
+  border-right: 1rpx dashed #d2d2d2;
+  display: inline-block;
+}
+.coupon-info-desc text{
+  display: block;
+  /* float: left; */
+  color: #282828;
+  padding: 0;
+}
+.coupon-info-desc-name{
+  color: #555;
+  font-size: 28rpx;
+}
+.coupon-info-desc-name.no{
+  color: #bbb;
+}
+.coupon-info-desc-info{
+  color: #282828;
+  font-size: 36rpx;
+  display: block;
+  margin: 15rpx 0;
+}
+.coupon-info-desc-info.no{
+  color: #bbb;
+}
+.coupon-info-desc-date{
+  color: #555;
+  font-size: 26rpx;
+}
+.coupon-info-desc-date.no{
+  color: #dadada;
+}
+.coupon-info-money{
+  display: inline-block;
+  float: right;
+  width: 252rpx;
+  height: 202rpx;
+  line-height: 202rpx;
+  text-align: center;
+}
+.coupon-info-money view{
+  color: #ff0000;
+  font-size: 36rpx;
+}
+.coupon-info-money.no view{
+  color: #bbb;
+}
+.coupon-info-money view text{
+  color: #ff0000;
+  font-size: 52rpx;
+  font-weight: 600;
+  padding: 0 16rpx 0 10rpx;
+}
+.coupon-info-money.no view text{
+  color: #bbb;
+}
+
+/* 左右半圆 */
+.coupon-left{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background: #f2f4f6;
+  position: absolute;
+  top: -15rpx;
+  left:394rpx;
+}
+.coupon-right{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background: #f2f4f6;
+  position: absolute;
+  bottom: -15rpx;
+  left:394rpx;
+}
+
+.section-button{
+  margin: 60rpx auto;
+  max-width: 450rpx;
+}

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/homepage/index",
+    "pages/w_my/w_my",
+    "pages/w_my_bind_member/w_my_bind_member",
+
+    "pages/w_index_rule/w_index_rule",
+    "pages/w_my_bind_prompt/w_my_bind_prompt",
+    "pages/w_my_exchange_coupon/w_my_exchange_coupon",
+    "pages/w_my_park_coupon/w_my_park_coupon",
+
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "龙信停车系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#BBB",
+    "backgroundColor": "#fff",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/homepage/index",
+        "text": "订单缴费",
+        "iconPath": "images/ico_home.png",
+        "selectedIconPath": "images/ico_home1.png"
+      },
+      {
+        "pagePath": "pages/w_my/w_my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 15000
+  },
+  "sitemapLocation": "sitemap.json"
+}

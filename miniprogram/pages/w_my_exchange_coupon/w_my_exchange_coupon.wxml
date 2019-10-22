@@ -1,0 +1,68 @@
+<!--pages/w_my_exchange_coupon/w_my_exchange_coupon.wxml-->
+
+<view class="mainbox">
+<!-- {{ne.member_point}} -->
+
+  <!-- 5元100积分 -->
+  <view class='coupon-info' bindtap="exchange_5">
+    <view class='coupon-info-desc'>
+      <text class='coupon-info-desc-name'>龙信广场 - 海门店</text>
+      <text class='coupon-info-desc-info'>￥5 元券</text>
+      <text class='coupon-info-desc-date'>有效期 - 即日起90天内</text>
+    </view>
+    <view class='coupon-info-money'>
+      <view><text>100</text>积分</view>
+    </view>
+    <!--上下半圆  -->
+    <view class='coupon-left'></view>
+    <view class='coupon-right'></view>
+  </view>
+
+  <!-- 10元180积分 -->
+  <view class='coupon-info' bindtap="exchange_10">
+    <view class='coupon-info-desc'>
+      <text class='coupon-info-desc-name'>龙信广场 - 海门店</text>
+      <text class='coupon-info-desc-info'>￥10 元券</text>
+      <text class='coupon-info-desc-date'>有效期 - 即日起90天内</text>
+    </view>
+    <view class='coupon-info-money'>
+      <view><text>180</text>积分</view>
+    </view>
+    <!--上下半圆  -->
+    <view class='coupon-left'></view>
+    <view class='coupon-right'></view>
+  </view>
+
+  <!-- 20元330积分 -->
+  <view class='coupon-info' bindtap="exchange_20">
+    <view class='coupon-info-desc'>
+      <text class='coupon-info-desc-name'>龙信广场 - 海门店</text>
+      <text class='coupon-info-desc-info'>￥20 元券</text>
+      <text class='coupon-info-desc-date'>有效期 - 即日起90天内</text>
+    </view>
+    <view class='coupon-info-money'>
+      <view><text>330</text>积分</view>
+    </view>
+    <!--上下半圆  -->
+    <view class='coupon-left'></view>
+    <view class='coupon-right'></view>
+  </view>
+
+  <!-- 50元780积分 -->
+  <view class='coupon-info' bindtap="exchange_50">
+    <view class='coupon-info-desc'>
+      <text class='coupon-info-desc-name'>龙信广场 - 海门店</text>
+      <text class='coupon-info-desc-info'>￥50 元券</text>
+      <text class='coupon-info-desc-date'>有效期 - 即日起90天内</text>
+    </view>
+    <view class='coupon-info-money'>
+      <view><text>780</text>积分</view>
+    </view>
+    <!--上下半圆  -->
+    <view class='coupon-left'></view>
+    <view class='coupon-right'></view>
+  </view>
+
+
+
+</view>
